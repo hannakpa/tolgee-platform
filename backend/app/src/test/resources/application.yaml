@@ -95,7 +95,7 @@ tolgee:
     enabled: false
   telemetry:
     enabled: false
-    server: http://localhost:8080
+    server: http://localhost:8081
   batch:
     concurrency: 10
   front-end-url: https://dummy-url.com

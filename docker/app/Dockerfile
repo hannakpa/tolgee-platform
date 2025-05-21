@@ -10,13 +10,13 @@ RUN apk --no-cache add "libxml2>=2.13.4-r5"
 #############
 
 # Expose application port
-EXPOSE 8080
+EXPOSE 8081
 
 # Define persistent volume for data storage
 VOLUME /data
 
 # Environment variables for configuration
-ENV HEALTHCHECK_PORT=8080 \
+ENV HEALTHCHECK_PORT=8081 \
     spring_profiles_active=docker
 
 # Copy necessary application files

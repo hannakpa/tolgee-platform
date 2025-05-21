@@ -6,7 +6,7 @@ services:
   app:
     image: tolgee/tolgee
     ports:
-      - "8090:8080"
+      - "8090:8081"
     env_file:
       - .env
     depends_on:

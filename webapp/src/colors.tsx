@@ -138,7 +138,7 @@ export const colors = {
     secondary: '#2B5582',
     default: customGrey[700],
     text: '#4E5967',
-    textSecondary: '#808080',
+    textSecondary: '#808180',
     divider1: '#E1E5EB',
     background: '#FDFDFF',
     backgroundPaper: '#ffffff',

@@ -20,7 +20,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
         DocProperty(
           name = "port",
           description = "Port on which Tolgee exposes itself.",
-          defaultValue = "8080",
+          defaultValue = "8081",
         ),
       ],
     ),

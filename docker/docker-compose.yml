@@ -8,7 +8,7 @@ services:
   app:
     image: tolgee/tolgee
     ports:
-      - ${exposePort}:8080
+      - ${exposePort}:8081
     env_file:
       - .env
     depends_on:

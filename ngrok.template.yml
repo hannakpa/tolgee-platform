@@ -3,7 +3,7 @@ authtoken: [YOUR_AUTH_TOKEN]
 tunnels:
   backend:
     proto: http
-    addr: 8080
+    addr: 8081
   frontend:
     proto: http
     addr: 8081

@@ -59,7 +59,7 @@ spring:
     show-sql: true
 tolgee:
   front-end-url: http://localhost:3000
-  file-storage-url: http://localhost:8080
+  file-storage-url: http://localhost:8081
 ```
 
 You can check `application-e2e.yaml` for further inspiration.

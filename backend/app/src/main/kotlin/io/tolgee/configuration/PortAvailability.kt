@@ -16,7 +16,7 @@ class PortAvailability {
 
   @Bean
   fun portAvailabilityChecker(
-    @Value("\${server.port:8080}") port: Int,
+    @Value("\${server.port:8081}") port: Int,
     @Value("\${management.server.port:#{null}}") managementPort: Int?,
   ): ServletContextInitializer {
     return ServletContextInitializer {

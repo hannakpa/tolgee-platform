@@ -34,16 +34,16 @@ tasks:
       printf "\033[3J\033c\033[3J"
 
       # Fix API server address for Gitpod VSCode Web
-      echo "VITE_APP_API_URL=$(gp url 8080)" > webapp/.env.local
+      echo "VITE_APP_API_URL=$(gp url 8081)" > webapp/.env.local
 
       until test -e /workspace/.f; do sleep 1; done
       # Schedule auto-refresh for the webapp preview window after backend is fully up,
       # as the webapp will probably have an error on the first render.
       (
         until curl -s -o /dev/null http://localhost:3000; do continue; done
-        echo "> GITPOD-INFO: Backend server might not be ready at port 8080 yet, expect error on webapp/frontend preview"
+        echo "> GITPOD-INFO: Backend server might not be ready at port 8081 yet, expect error on webapp/frontend preview"
         (while true; do sleep 1; echo -n .; done) &
-        gp ports await 8080 && kill $!
+        gp ports await 8081 && kill $!
         echo "> GITPOD-INFO: Refreshing webapp/frontend preview at port 3000"
         gp preview "$(gp url 3000)"
       ) &
@@ -51,7 +51,7 @@ tasks:
 
 ports:
   - name: Backend
-    port: 8080
+    port: 8081
     visibility: public
     onOpen: ignore
   
