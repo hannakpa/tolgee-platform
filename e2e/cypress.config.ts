@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress';
 import { GLOBAL_RETRIES } from './cypress/common/globalRetries';
 
+
 export default defineConfig({
   scrollBehavior: 'center',
   video: false,
